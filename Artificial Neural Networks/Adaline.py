@@ -11,7 +11,7 @@ def step(x):
         else:
             return x
             
-#Learning 
+#%% Learning 
 def learn(inputs,targets,eta,nbOfEpochs):
     (nbPairs,dimIn)=np.shape(inputs) #number of pairs to learn and dimension of the Inputs
     dimOut=len(targets[1,:]) #dimension of the Outputs
@@ -38,7 +38,7 @@ def learn(inputs,targets,eta,nbOfEpochs):
 
     return (w,mse) #weights and MSE are returned
  
-#Learning    
+#%% Recall   
 def recall(inputs,targets,w,outFunc): # fucntion (ex. step) can be passed like argument
 
     (nbPairs,dimIn)=np.shape(inputs)
