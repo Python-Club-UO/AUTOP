@@ -1,5 +1,8 @@
-Adaline- a basic neural net
-- Cite Publication
+Adaline is on of the simplest and earliest neural networks. Adaline stands for "Adaptive Linear Neuron," first developed by Widrow and Hoff (see original publication for details and diagrams on the architecture):
+Widrow, B., & Hoff, M. E. (1960). Adaptive switching circuits(No. TR-1553-1). STANFORD UNIV CA STANFORD ELECTRONICS LABS.
+
+Adaline learns the best set of weight connections for a given input to approximate a desired target value. To achieve this, 
+
 - Step Function
 - Learning Function (explain random list, how MSE works and what it means, weight matrix, how we compute output, activation, how we update the weights)
 - Recall Function (what it does in general)
@@ -8,7 +11,6 @@ Adaline- a basic neural net
 
 The adaptive linear neuron (Adaline; Widrow, 1962) is a simple, fundamental unit that has previously been used in ANNs. Adaline’s adaptation mechanism arises from the determination of the best set of weights between a given input and the desired associated output, such that the mean squared error (MSE) is minimized
 
-Widrow, B., & Hoff, M. E. (1960). Adaptive switching circuits(No. TR-1553-1). STANFORD UNIV CA STANFORD ELECTRONICS LABS.
 
 -------
 
