@@ -17,6 +17,9 @@ Architecture:
 ![Adaline Architecture](https://github.com/Python-Club-UO/AUTOP/blob/master/Artificial%20Neural%20Networks/Adaline%20Architecture.png)
 
 Step Function:
+
+
+
 ![step function](https://github.com/Python-Club-UO/AUTOP/blob/master/Artificial%20Neural%20Networks/Step%20Function.png)
 
 
