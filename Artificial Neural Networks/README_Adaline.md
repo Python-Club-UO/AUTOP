@@ -7,7 +7,8 @@ Adaline learns the best set of weight connections for a given input to approxima
 To obtain the final response, the output is fed through the step function. The step function has a threshold at 0.5. If the value entered into the function is above this threshold, it will return 1. If it's below, the function will return 0. This is the final response, categorizing a specific input into one of the binary options.
 
 We then want to determine how well the network has learned. To do this, we calculate the error by taking the difference between the output before the step function and the target values. Next, to improve learning, we update the weights based on this error, to shift the learned output closer to the desired target values: 
-w_new = w_old + eta * (error . x^T)
+![Weight Update Function](https://github.com/Python-Club-UO/AUTOP/blob/master/Artificial%20Neural%20Networks/weightupdate.JPG)
+
 Where w_old are the weight connections from the previous iteration and eta is the learning rate.
 This process is repeated until a desired minimum error has been reached or a max number of iterations has been reached. 
 
@@ -33,7 +34,7 @@ Adaline est un classificateur binaire avec une limite de décision linéaire, ce
 Adaline apprend le meilleur ensemble de connexions de poids pour une entrée donnée afin de se rapprocher d'une valeur cible souhaitée. Le produit scalaire des connexions de poids (w) et des entrées (x) est additionné. Cela donne la sortie avant de passer par la fonction d'étape (avant qu'une décision ne soit prise). Cette sortie est utilisée pour calculer à la fois l'erreur et la sortie finale (la décision prise par l'Adaline). Pour obtenir la réponse finale, la sortie est alimentée par la fonction d'étape. La fonction d'étape a un seuil de 0,5. Si la valeur entrée dans la fonction est supérieure à ce seuil, elle renvoie 1. Si elle est inférieure à 0,5, la fonction retournera 0. Ça c'est la réponse finale, qui catégorise une entrée spécifique dans l'une des options binaires.
 
 Nous voulons ensuite déterminer dans quelle mesure le réseau a bien appris. Pour ce faire, nous calculons l'erreur en prenant la différence entre la sortie avant la fonction d'étape et les valeurs cibles. Ensuite, pour améliorer l'apprentissage, nous mettons à jour les poids en fonction de cette erreur, afin de rapprocher la sortie apprise des valeurs cibles souhaitées : 
-
+![Weight Update Function](https://github.com/Python-Club-UO/AUTOP/blob/master/Artificial%20Neural%20Networks/weightupdate.JPG)
 Où w_old sont les connexions de poids de l'itération précédente et eta est le taux d'apprentissage. Ce processus est répété jusqu'à ce qu'une erreur minimale souhaitée ait été atteinte ou qu'un nombre maximal d'itérations ait été atteint.
 
 Un moyen rapide de déterminer si votre réseau a correctement appris est de comparer les cibles avec les sorties générées.
