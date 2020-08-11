@@ -7,7 +7,8 @@ Adaline is a binary classifier with a linear decision boundary, meaning it can c
 Adaline learns the best set of weight connections for a given input to approximate a desired target value. To achieve this, 
 
 - Step Function
-![alt text](https://github.com/[kinseychurch]/[Python-Club-UO]/AUTOP/Step Function.png?raw=true)
+![alt text](https://github.com/[kinseychurch]/[Python-Club-UO]/AUTOP/Artificial Neural Networks/Step Function.png?raw=true)
+
 - Learning Function (explain random list, how MSE works and what it means, weight matrix, how we compute output, activation, how we update the weights)
 - Recall Function (what it does in general)
 - Initialization (defining variables, generating inputs)
