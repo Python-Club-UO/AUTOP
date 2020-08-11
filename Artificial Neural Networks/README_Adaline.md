@@ -25,4 +25,24 @@ Step Function:
 
 -------
 
-French
+Adaline est l'un des plus simples et des plus anciens réseaux de neurones. Il est l'abréviation de "Adaptive Linear Neuron", développé à l'origine par Widrow et Hoff (voir la publication originale pour des détails et des schémas sur l'architecture):
+Widrow, B., & Hoff, M. E. (1960). Adaptive switching circuits (No. TR-1553-1). STANFORD UNIV CA STANFORD ELECTRONICS LABS.
+
+Adaline est un classificateur binaire avec une limite de décision linéaire, ce qui signifie qu'il ne peut classifier que deux choses à la fois et ne peut résoudre que des problèmes linéaires.
+
+Adaline apprend le meilleur ensemble de connexions de poids pour une entrée donnée afin de se rapprocher d'une valeur cible souhaitée. Le produit scalaire des connexions de poids (w) et des entrées (x) est additionné. Cela donne la sortie avant de passer par la fonction d'étape (avant qu'une décision ne soit prise). Cette sortie est utilisée pour calculer à la fois l'erreur et la sortie finale (la décision prise par l'Adaline). Pour obtenir la réponse finale, la sortie est alimentée par la fonction d'étape. La fonction d'étape a un seuil de 0,5. Si la valeur entrée dans la fonction est supérieure à ce seuil, elle renvoie 1. Si elle est inférieure à 0,5, la fonction retournera 0. Ça c'est la réponse finale, qui catégorise une entrée spécifique dans l'une des options binaires.
+
+Nous voulons ensuite déterminer dans quelle mesure le réseau a bien appris. Pour ce faire, nous calculons l'erreur en prenant la différence entre la sortie avant la fonction d'étape et les valeurs cibles. Ensuite, pour améliorer l'apprentissage, nous mettons à jour les poids en fonction de cette erreur, afin de rapprocher la sortie apprise des valeurs cibles souhaitées : 
+
+Où w_old sont les connexions de poids de l'itération précédente et eta est le taux d'apprentissage. Ce processus est répété jusqu'à ce qu'une erreur minimale souhaitée ait été atteinte ou qu'un nombre maximal d'itérations ait été atteint.
+
+Un moyen rapide de déterminer si votre réseau a correctement appris est de comparer les cibles avec les sorties générées.
+
+Architecture:
+![Adaline Architecture](https://github.com/Python-Club-UO/AUTOP/blob/master/Artificial%20Neural%20Networks/Adaline%20Architecture.png)
+
+Fonction d'étape:
+
+
+
+![step function](https://github.com/Python-Club-UO/AUTOP/blob/master/Artificial%20Neural%20Networks/Step%20Function.png)
